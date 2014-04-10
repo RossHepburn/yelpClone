@@ -21,4 +21,21 @@ describe 'the restaurants index page' do
 			end
 		end
 	end
+
+	context 'with existing restaurants' do
+		before do 
+			Restaurant.create(name: 'McDonalds')
+		end
+
+		describe 'editing a restaurant' do
+			it 'updates the restaurant details' do
+				visit '/restaurants'
+				click_link 'Edit'
+				fill_in 'Name', with: 'Old McDonalds'
+				click_button 'Update Restaurant'
+
+				expect(page).to have_content 'Old McDonalds'
+			end
+		end
+	end
 end
