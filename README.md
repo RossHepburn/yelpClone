@@ -1,5 +1,7 @@
 Makers Academy Week 8 Project
 
+Build a web app that allows reviews of Restaurants
+
 Specification
 
 must have users with secure accounts
