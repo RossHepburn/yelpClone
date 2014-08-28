@@ -1,6 +1,6 @@
 Makers Academy Week 8 Project
 
-Build a web app that allows reviews of Restaurants
+Build a web app that allows reviews of Restaurants.
 
 Specification
 
